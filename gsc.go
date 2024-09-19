@@ -1,3 +1,5 @@
+// Author: Jyotirmoy Bandyopadhayaya
+
 package main
 
 import (
