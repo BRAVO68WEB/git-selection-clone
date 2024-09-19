@@ -1,4 +1,4 @@
-package gitselectionclone
+package main
 
 import (
 	"fmt"
@@ -15,6 +15,12 @@ func cloneRepo(gitURL string, branch string, output_folder string) {
 }
 
 func main() {
+	// Check if the number of arguments is correct
+	if len(os.Args) != 3 {
+		fmt.Println("Usage: gsc <git-url> <output-folder>")
+		os.Exit(1)
+	}
+
 	// Arguments
 	gitURL := os.Args[1]
 	output_folder := os.Args[2]
